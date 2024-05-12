@@ -1,0 +1,173 @@
+$grey : rgb(93,92,91);
+$white : rgb(246,246,247);
+$black : rgb(24,26,31);
+
+body{
+    transition: 01s;
+}
+html,body,*{
+    color: $black;
+}
+body{
+    background-color: $white;
+}
+a{
+    color: $black;
+    text-decoration: none;
+    font-weight: 500;
+}
+.hero{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    height: 20px;
+    width: 20px;
+}
+.underline{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+
+}
+.thin{
+    font-weight: 400;
+}
+.t2{
+    font-size: small;
+}
+.MenuPop{
+    z-index: 2;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    background-color: $white;
+    animation: trans .5s;
+}
+
+@keyframes trans{
+    from{
+        transform: translate(0,-10px);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.menu{
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    top: -10px;
+    width: 95%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right:16px;
+    animation: 1s trans;
+    transition: all .5s;
+    .logo{
+        width: 120px;
+        height: 24px;
+    }
+    ul{
+        display: flex;
+        padding: 0;
+        list-style-type: none;
+
+        li{
+            font-size: 95%;
+            text-align: center;
+            text-decoration: none;
+            padding: 8px;
+            margin: 8px;
+            cursor:pointer;
+        }
+        
+        li:hover{
+            border-radius: 5px;
+            transition: .2s ease-in-out;
+            background-color: rgba(192, 192, 192, 0.333);
+        }
+    }
+}
+b{
+    font-weight: 500;
+}
+.princ *{
+    width: 70px;
+}
+.serre *{
+    margin: 0 !important;
+    padding: 0;
+}
+.imagePres{
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/tY.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .hero-text{
+        height: 75%;
+        text-align: center;
+        h1{
+            margin-top: 90px;
+            font-weight: 500;
+            font-size: 45px;
+        }
+        span{
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-weight: lighter;
+        }
+        *{
+            margin: 0;
+        }
+    }
+    hr{
+        width: 220px;
+    }
+    div{
+
+    }
+
+}
+.grey{
+    background-color: $grey !important;
+    color:$white;
+    font-size: 90%;
+}
+.grey-c{
+    color:$grey !important;
+    font-size: 90%;
+}
+.white{
+    background-color: $white !important;
+    font-size: 90%;
+}
+button{
+    border-radius: 3px !important;
+    margin: 10px;
+    width: 250px;
+    height: 40px;
+    color: $black;
+    
+}
+
+.Banners{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
